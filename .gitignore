@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Generated test files
+generated_tests/
+test_output/
+*_generated.java
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+.tmp/
+
+# Configuration (uncomment if you have sensitive config)
+# config.yaml
+# *.env
+
+# OS specific
+Thumbs.db
+.DS_Store
+
+# Java (for generated test files)
+*.class
+target/
+.settings/
+.classpath
+.project
+
+# Gemini/AI cache (if any)
+.gemini/
+.cache/
