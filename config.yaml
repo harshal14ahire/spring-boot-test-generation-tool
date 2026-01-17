@@ -1,0 +1,35 @@
+# AI Test Generator Configuration
+
+ai:
+  provider: gemini
+  model: gemini-1.5-flash
+  api_key_env: GEMINI_API_KEY
+
+project:
+  base_package: de.cathago.earth
+  source_dir: src/main/java
+  test_dir: src/test/java
+  metadata_file: metadata.txt
+  architecture_file: docs/AGENTS.md
+
+test:
+  unit:
+    framework: junit5
+    mocking: mockito
+    assertions: assertj
+    data_generation: instancio
+    style: bdd
+    
+  integration:
+    use_testcontainers: true
+    containers:
+      - postgres:15
+      - mongo:6
+      - kafka
+    base_class: AbstractIntegrationTest
+    use_mockmvc: true
+
+naming:
+  unit_test_suffix: Test
+  integration_test_suffix: IntegrationTest
+  test_method_prefix: should
